@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +22,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4J-IE-1rE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-Zp-dI8">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="q4J-IE-1rE" secondAttribute="trailing" id="VPY-UM-Q3d"/>
-                            <constraint firstItem="q4J-IE-1rE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yyt-kx-eys"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q4J-IE-1rE" secondAttribute="bottom" id="c21-YA-eQM"/>
-                            <constraint firstItem="q4J-IE-1rE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uJz-DA-rqT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y0W-Zp-dI8" secondAttribute="trailing" id="5Io-dA-sRJ"/>
+                            <constraint firstItem="y0W-Zp-dI8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7GQ-0o-kBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y0W-Zp-dI8" secondAttribute="bottom" id="Ct5-Rx-QFA"/>
+                            <constraint firstItem="y0W-Zp-dI8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FfY-mO-5I8"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstTableView" destination="q4J-IE-1rE" id="8Qe-no-bcR"/>
+                        <outlet property="firstTableView" destination="y0W-Zp-dI8" id="nbs-ma-D6K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
