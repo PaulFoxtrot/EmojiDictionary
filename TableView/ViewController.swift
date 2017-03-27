@@ -34,6 +34,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let emoji = emojisArray[indexPath.row]    // returns the row's content
+        performSegue(withIdentifier: "moveSegue", sender: emoji)  // identifier is designated in storyboard segue
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let defViewContr = segue.destination as! DefinitionViewController
+        
+        defViewContr.emojiTwo = sender as! String
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
