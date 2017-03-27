@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var firstTableView: UITableView!
     
-    var emojisArray = ["🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔","🐔"]
+    var emojisArray = ["🐔","🐶","🦋","🦆","🦊","🦄","🦑","🐡","🦈","🐥","🐿","🏋🏾","⚓︎","👩🏾‍🌾","👩🏼‍🏫","🦅"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
